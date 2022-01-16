@@ -1,0 +1,12 @@
+{
+    "attributes" : [ {
+      "trait_type" : "Type",
+      "value" : "Sculpture"
+    }, {
+      "trait_type" : "Dominant Color",
+      "value" : "Red"
+    } ],
+    "description" : "The world's first Sto Nino NFT in the blockchain",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmfRiVPbRWdq6Pr6haUojxvPGbmfT4VLSZ9yuoSuDJxcBv",
+    "name" : "Sto Nino"
+}
