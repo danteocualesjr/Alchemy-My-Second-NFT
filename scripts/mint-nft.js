@@ -32,3 +32,4 @@ async function mintNFT(tokenURI) {
 // const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 // console.log(JSON.stringify(contract.abi));
 
+mintNFT("https://gateway.pinata.cloud/ipfs/QmZC3mbu9qcyBt7WDsQ9z5zpUZ2J8X1Y54aJNkovDwbkC7");
