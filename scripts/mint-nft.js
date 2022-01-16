@@ -22,7 +22,13 @@ async function mintNFT(tokenURI) {
     'maxPriorityFeePerGas': 1999999987,
     'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
   };
+
+  const signedTx = await web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
+  const transactionReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
+  
+  console.log(`Transaction receipt: ${JSON.stringify(transactionReceipt)}`);
 }​
 
 // const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 // console.log(JSON.stringify(contract.abi));
+
