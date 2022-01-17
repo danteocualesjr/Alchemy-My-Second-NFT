@@ -13,7 +13,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 async function mintNFT(tokenURI) {
   const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
 
-  //The transaction
+  //the transaction
   const tx = {
     'from': PUBLIC_KEY,
     'to': contractAddress,
@@ -27,9 +27,6 @@ async function mintNFT(tokenURI) {
   const transactionReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
   
   console.log(`Transaction receipt: ${JSON.stringify(transactionReceipt)}`);
-}​
-
-// const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
-// console.log(JSON.stringify(contract.abi));
+}
 
 mintNFT("https://gateway.pinata.cloud/ipfs/QmZC3mbu9qcyBt7WDsQ9z5zpUZ2J8X1Y54aJNkovDwbkC7");
