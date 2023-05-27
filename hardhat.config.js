@@ -16,5 +16,4 @@ module.exports = {
          accounts: [`0x${PRIVATE_KEY}`]
       }
    },
-   
 }
