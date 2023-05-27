@@ -14,7 +14,6 @@ module.exports = {
       ropsten: {
          url: API_URL,
          accounts: [`0x${PRIVATE_KEY}`]
-
       }
 
    },
