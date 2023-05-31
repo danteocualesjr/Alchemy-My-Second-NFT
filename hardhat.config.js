@@ -15,6 +15,7 @@ module.exports = {
    defaultNetwork: "ropsten",
    
    networks: {
+      
       hardhat: {},
       ropsten: {
          url: API_URL,
