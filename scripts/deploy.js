@@ -1,4 +1,5 @@
 async function main() {
+  
     // Grab the contract factory 
     const MyNFT = await ethers.getContractFactory("MyNFT");
  
